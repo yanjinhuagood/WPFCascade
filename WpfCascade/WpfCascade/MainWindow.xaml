@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:WpfCascade.ViewModels"
     xmlns:wd="https://github.com/WPFDevelopersOrg/WPFDevelopers"
-    Title="CascadePicker - 级联选择器 【WPF开发者】"
+    Title="CascadePicker - 级联选择器 【公众号：WPF开发者】"
     Width="800"
     Height="450"
     mc:Ignorable="d">

@@ -7,14 +7,11 @@ using WPFDevelopers.Controls;
 
 namespace WpfCascade.ViewModels
 {
-    public class MainWindowVM : ObservableObject
+    public partial class MainWindowVM : ObservableObject
     {
         private string _city;
 
         private ObservableCollection<CityInfo> _cityInfos;
-
-        private RelayCommand? getCityCommand;
-
         public MainWindowVM()
         {
             _cityInfos = new ObservableCollection<CityInfo>();
@@ -106,8 +103,6 @@ namespace WpfCascade.ViewModels
             get => _cityInfos;
             set => SetProperty(ref _cityInfos, value);
         }
-
-        public IRelayCommand GetCityCommand => getCityCommand ??= new RelayCommand(GetCity);
 
         [RelayCommand]
         private void GetCity()
